@@ -13,3 +13,8 @@ int main(int argc, char ** argv)
     return real_main(argc, argv);
 }
 #endif
+
+int foo_main(int a, int b)
+{
+    return foo(a, b) * 3;
+}

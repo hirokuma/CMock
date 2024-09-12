@@ -20,7 +20,7 @@ clean:
 	rm -rf ${BUILD_DIR}
 
 ${BUILD_DIR}/main: ${SRC_DIR}/main.c ${SRC_DIR}/foo.c
-	${CC} $< -o $@
+	${CC} $^ -o $@
 
 run:
 	./build/main || true
